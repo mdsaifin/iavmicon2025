@@ -2252,3 +2252,21 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0; /* Optional: adds space around the table */
+}
+
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.registration-table th, .registration-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
