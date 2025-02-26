@@ -2254,10 +2254,10 @@ a:hover.back-to-top {
 /* end of min-width width 1200px */
 
 
-.table-responsive {
+/* .table-responsive {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: 20px 0; /* Optional: adds space around the table */
+    margin: 20px 0; 
 }
 
 .registration-table {
@@ -2269,4 +2269,27 @@ a:hover.back-to-top {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
+} */
+
+
+
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0; /* Optional: adds space around the table */
+    max-width: 100%; /* Ensures it doesn’t exceed the container */
+}
+
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Adjust based on content */
+}
+
+.registration-table th, .registration-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
